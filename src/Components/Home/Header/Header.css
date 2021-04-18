@@ -1,0 +1,17 @@
+.header-container {
+    height:100%;
+    /* background-image: url('../../../image/'); */
+    background-size: cover;
+}
+.header-container::after {
+    height:700px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    right: 0;
+    background-image: url('../../../image/headerBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -50;
+}

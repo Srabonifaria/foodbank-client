@@ -1,0 +1,9 @@
+.main{
+    height: 600px;
+    padding: 5px;
+}
+.areaBtn{
+    height: 100%;
+    background-color: #D70F64;
+    color: white;
+}

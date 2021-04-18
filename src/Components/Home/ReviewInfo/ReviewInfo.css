@@ -1,0 +1,13 @@
+
+.review .card{
+    border-color: transparent;
+}
+.review .card:hover{
+    background-image: linear-gradient(75deg, pink, tomato);
+    color: #fff !important;
+    transition:  .1s  all ease-in-out !important;
+}
+.review .card .card-footer{
+    background: transparent;
+    border: 0;
+}

@@ -1,0 +1,11 @@
+.partner{
+    background-image: url('../../../image/PartnerBg.jpg');
+    height:400px;
+    top: 0;
+    width: 100%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-top:15px;
+}
