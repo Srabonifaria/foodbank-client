@@ -9,7 +9,7 @@ const Admin = () => {
             {/* {
             admin.image ? <img style={{height: '200px'}} src={`data:image/png;base64,${admin.image.img}`}/>
             :
-            <img style={{height: '200px'}} className="img-fluid mb-3" src={`http://localhost:7000/${admin.img}`} alt=""/>
+            <img style={{height: '200px'}} className="img-fluid mb-3" src={`https://blooming-inlet-54142.herokuapp.com/${admin.img}`} alt=""/>
         } */}
 
             <img style={{height:'200px'}} className="img-fluid mb-3" src={img} alt=""/>

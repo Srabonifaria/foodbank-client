@@ -1,46 +1,22 @@
-import React from 'react';
-import Brahmanbaria from '../../../image/brahmanbaria.jpg';
-import Lalbagh from '../../../image/lalbagh.jpg';
+import React, { useEffect, useState } from 'react';
 import LocationCard from '../LocationCard/LocationCard';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-const locationData =[
-    {
-        name: 'Dhaka',
-        image:Lalbagh,
-        icon:faArrowRight
-    },
-    {
-        name: 'Brahmanbaria',
-        image:Brahmanbaria,
-        icon:faArrowRight
-    },
-    {
-        name: 'Khulna',
-        image:Brahmanbaria,
-        icon:faArrowRight
-    },
-    {
-        name: 'Lalbagh',
-        image:Lalbagh,
-        icon:faArrowRight
-    },
-    {
-        name: 'Cumilla',
-        image:Brahmanbaria,
-        icon:faArrowRight
-    },
-    {
-        name: 'Cumilla',
-        image:Lalbagh,
-        icon:faArrowRight
-    }
-]
+
 
 const ShopLocation = () => {
+
+    const [services,setServices]= useState([])
+
+    useEffect(() => {
+        fetch('https://blooming-inlet-54142.herokuapp.com/services')
+        .then(res => res.json())
+        .then(data => setServices(data))
+
+    },[])
     return (
         <section className="row">
             {
-                locationData.map(location => <LocationCard location={location}></LocationCard>)
+                services.map(location => <LocationCard location={location}></LocationCard>)
             }
         </section>
     );

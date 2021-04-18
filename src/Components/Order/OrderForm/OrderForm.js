@@ -24,7 +24,7 @@ const OrderForm = ({ modalIsOpen, closeModal, orderOn, date,price }) => {
          data.date = date;
          data.price =price
          data.created = new Date();
-        fetch('http://localhost:7000/addOrder', {
+        fetch('https://blooming-inlet-54142.herokuapp.com/addOrder', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)

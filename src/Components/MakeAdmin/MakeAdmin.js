@@ -22,7 +22,7 @@ const MakeAdmin = () => {
         formData.append('name', info.name);
         formData.append('email', info.email);
 
-        fetch('http://localhost:7000/makeAdmin', {
+        fetch('https://blooming-inlet-54142.herokuapp.com/makeAdmin', {
             method: 'POST',
             body: formData
         })
